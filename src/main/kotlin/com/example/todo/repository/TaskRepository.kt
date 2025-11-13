@@ -1,6 +1,7 @@
 package com.example.todo.repository
 
 import com.example.todo.model.Task
+import com.example.todo.model.TaskStatus
 import org.springframework.stereotype.Repository
 import java.time.LocalDate
 
@@ -8,11 +9,10 @@ import java.time.LocalDate
 class TaskRepository {
 
     fun saveTask(task: Task) {}
-    fun getTaskById(id: String) {}
-    fun getAllTasks() {}
-    fun updateTask(task: Task) {}
+    fun getTaskById(id: String): Task? {}
+    fun getAllTasks(): List<Task> {}
     fun deleteTask(id: String) {}
-    fun getTasksByStatus(status: Task.TaskStatus) {}
+    fun getTasksByStatus(status: TaskStatus): List<Task> {}
     fun getTasksByDueDate(dueDate: LocalDate) {}
     fun existsById(id: String) {}
 
