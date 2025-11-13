@@ -2,8 +2,6 @@ package com.example.todo.controller
 
 import com.example.todo.dto.TaskRequest
 import com.example.todo.dto.TaskResponse
-import com.example.todo.model.Task
-import com.example.todo.model.TaskStatus
 import com.example.todo.service.TaskService
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
